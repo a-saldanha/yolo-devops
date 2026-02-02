@@ -2,6 +2,7 @@ fastapi
 uvicorn
 python-multipart
 pillow
-# Get CPU-only torch to keep image small
+# Use headless OpenCV (no system dependencies needed)
+opencv-python-headless
 torch --index-url https://download.pytorch.org/whl/cpu
 torchvision --index-url https://download.pytorch.org/whl/cpu
