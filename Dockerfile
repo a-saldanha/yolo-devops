@@ -4,9 +4,10 @@ WORKDIR /app
 
 COPY requirements.txt .
 
+# Install dependencies (CPU-only torch + headless opencv)
 RUN pip install --no-cache-dir -r requirements.txt
 
-# --- DELETED THE APT-GET LINE HERE ---
+# --- NOTE: The apt-get line is GONE ---
 
 COPY . .
 

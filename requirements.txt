@@ -2,7 +2,9 @@ fastapi
 uvicorn
 python-multipart
 pillow
-# Use headless OpenCV (no system dependencies needed)
+# 1. Use Headless OpenCV (Fixes the libgl1-mesa-glx error)
 opencv-python-headless
+
+# 2. Force CPU-only PyTorch (Fixes the nvidia bloat/crash)
 torch --index-url https://download.pytorch.org/whl/cpu
 torchvision --index-url https://download.pytorch.org/whl/cpu
